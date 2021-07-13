@@ -357,6 +357,9 @@ body {
     .portfolio {
         visibility:visible;
 }
+    .portfolio ul li a:hover {
+        padding: 2px 5px;
+}
     .redes{
         padding-top: 90%;
     }
@@ -366,22 +369,22 @@ body {
 @media only screen and (max-device-width:350px){
     
         .encabezado #renglon1{
-            font-size: 32px;
+            font-size: 24px;
         }
         .encabezado #renglon2 {
-            font-size: 24px;
+            font-size: 18px;
             
         }
         .encabezado #renglon3 {
-            font-size: 20px;
+            font-size: 18px;
             
         }
         .encabezado #renglon4 {
-            font-size: 20px;
+            font-size: 18px;
             
         }
         .encabezado #renglon5 {
-            font-size: 24px;
+            font-size: 18px;
             
         }
         .redes{
@@ -389,6 +392,9 @@ body {
         }
         .portfolio {
             visibility: hidden;
+        }
+        .portfolio ul li a:hover {
+            padding: 2px 5px;
         }
            
     
