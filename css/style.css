@@ -19,6 +19,7 @@ body {
     background-color: var(--color-1);
 }
 
+
 .encabezado{
     display: flex;
     flex-direction: row;
@@ -29,12 +30,14 @@ body {
     position: fixed;
     display:block ;
     font-size: 64px;
-    margin-top: 10px;
+    margin-top: 2%;
+    left: 20%;
 
 
     color: var(--color-3);
-    animation-name: desplazar1;
-    animation-duration: 10s;
+    animation-name: desaparecer;
+    animation-duration: 3s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 .encabezado #renglon2 {
@@ -47,50 +50,46 @@ body {
 
     color: var(--color-3);
     animation-name: desplazar2;
-    animation-duration: 10s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
-.encabezado #renglon3 {
+#ele-toon {
+    margin-top: 17%;
+    margin-left: 32%;
     position: fixed;
-    display:block ;
-    justify-content: space-evenly;
-    height: 32px;
-    font-size: 32px;
-    margin-top: 200px;
+    width: 50%;
 
-
-    color: var(--color-3);
-    animation-name: desplazar3;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
+    /* animation-name: desaparecer;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
 }
-.encabezado #renglon4 {
-    position: fixed;
-    display:block ;
-    justify-content: space-evenly;
-    height: 32px;
-    font-size: 32px;
-    margin-top: 250px;
 
-
-    color:var(--color-3);
-    animation-name: desplazar4;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-}
-.encabezado #renglon5 {
-    position: fixed;
-    display:block ;
-    justify-content: space-evenly;
-    height: 32px;
-    font-size: 32px;
-    margin-top: 300px;
-
-
-    color: var(--color-3);
-    animation-name: desplazar5;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
+@keyframes desaparecer {
+    0%{
+        visibility: visible;
+    }
+    20%{
+        visibility: visible;
+        opacity: 0.95;
+    }
+    40%{
+        visibility: visible;
+        opacity: 0.9;
+    }
+    60%{
+        visibility: visible;
+        opacity: 0.85;
+    }
+    80%{
+        visibility: visible;
+        opacity: 0.80;
+    }
+    100%{
+        visibility:visible;
+        opacity: 0.75;
+    }
 }
 
 @keyframes desplazar1 {
@@ -103,31 +102,31 @@ body {
     }
     20% {
         position: absolute;
-        left: 30%;
+        left: 80%;
         visibility: visible;
         color: var(--color-2);
         }
     40% {
         position: absolute;
-        left: 30%;
+        left: 60%;
         visibility: visible;
         color: var(--color-3);
     }
     60% {
         position: absolute;
-        left: 30%;
+        left: 40%;
         visibility: visible;
         color: var(--color-3);
     }
     80% {
         position: absolute;
-        left: 30%;
+        left: 20%;
         visibility: visible;
         color: var(--color-4);
     }
     100% {
         position: absolute;
-        left: 30%;
+        left: 20%;
         visibility: visible;
         color:  var(--color-5);
     }
@@ -136,6 +135,7 @@ body {
     0%{
         position: absolute;
         left: 100%;
+        top: 10%;
         visibility: hidden;
         color: #0F4C59;
 
@@ -143,151 +143,40 @@ body {
     20% {
         position: absolute;
         left: 30%;
+        top:9%;
         visibility: hidden;
         color: #0F4C59;
         }
     40% {
         position: absolute;
         left: 30%;
+        top: 8%;
         visibility: visible;
         color: #37A6A6;
     }
     60% {
         position: absolute;
         left: 30%;
+        top: 7%;
         visibility: visible;
         color: #37A6A6;
     }
     80% {
         position: absolute;
         left: 30%;
+        top: 6%;
         visibility: visible;
         color: #66D9C4;
     }
     100% {
         position: absolute;
         left: 30%;
+        top: 5%;
         visibility: visible;
         color:  #4AD9B0;
     }
 }
-@keyframes desplazar3 {
-    0%{
-        position: absolute;
-        left: 100%;
-        visibility: hidden;
-        color: #0F4C59;
 
-    }
-    20% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #0F4C59;
-        }
-    40% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #37A6A6;
-    }
-    60% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color: #37A6A6;
-    }
-    80% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color: #66D9C4;
-    }
-    100% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color:  #4AD9B0;
-    }
-}
-@keyframes desplazar4 {
-    0%{
-        position: absolute;
-        left: 100%;
-        visibility: hidden;
-        color: #0F4C59;
-
-    }
-    20% {
-        position: absolute;
-        left: 30%;
-        visibility:hidden;
-        color: #0F4C59;
-        }
-    40% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #37A6A6;
-    }
-    60% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #37A6A6;
-    }
-    80% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color: #66D9C4;
-    }
-    100% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color:  #4AD9B0;
-    }
-}
-@keyframes desplazar5 {
-    0%{
-        position: absolute;
-        left: 100%;
-        visibility: hidden;
-        color: #0F4C59;
-
-    }
-    20% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #0F4C59;
-        }
-    40% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #37A6A6;
-    }
-    60% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #37A6A6;
-    }
-    80% {
-        position: absolute;
-        left: 30%;
-        visibility: hidden;
-        color: #66D9C4;
-    }
-    100% {
-        position: absolute;
-        left: 30%;
-        visibility: visible;
-        color:  #4AD9B0;
-    }
-}
 
 .portfolio{
     position: fixed;
@@ -317,83 +206,71 @@ body {
 }
 
 
-
-
-
 .redes {
     
     height: 20%;
     text-align: center;
     padding-top: 500px;
     padding-bottom: 10px;
-
+    
 }
 .redes li{
     display: inline;
     padding: 30px;
 
 }
-.redes a:hover{
-    padding: 30px 20px 0px 0px;
-    color: white;
-    transition: 1s;
-}
 
-@media only screen and (max-device-width:760px){
+
+@media only screen and (max-device-width:768px){
     .encabezado #renglon1{
-        font-size: 32px;
+        font-size: 40px;
+        left: 10%;
+        margin-top:10%;
+        
     }
     .encabezado #renglon2 {
         font-size: 24px;
+        left: 10%;
         
     }
-    .encabezado #renglon3 {
-        font-size: 24px;
-        
-    }
-    .encabezado #renglon4 {
-        font-size: 24px;
-        
-    }
-    .encabezado #renglon5 {
-        font-size: 24px;
-        
-    }
-    .portfolio {
-        visibility:visible;
-}
-    .portfolio ul li a:hover {
-        padding: 2px 5px;
-}
+    
     .redes{
         padding-top: 90%;
     }
+    .portfolio {
+        visibility: hidden;
+    }
+    .portfolio ul li a:hover {
+        padding: 2px 5px;
+    }
+       
 
+    .redes {
+        margin-top: 50%;
+    }
+    #ele-toon{
+        visibility: visible;
+        top: 30%;
+        right: 25%;
+    }
+    
 }
 
 @media only screen and (max-device-width:350px){
     
         .encabezado #renglon1{
-            font-size: 24px;
+            font-size: 40px;
+            left: 5%;
+            
         }
         .encabezado #renglon2 {
-            font-size: 18px;
+            font-size: 20px;
+            left: 10%;
             
         }
-        .encabezado #renglon3 {
-            font-size: 18px;
-            
-        }
-        .encabezado #renglon4 {
-            font-size: 18px;
-            
-        }
-        .encabezado #renglon5 {
-            font-size: 18px;
-            
-        }
+        
         .redes{
-            padding-top: 90%;
+            padding-top: 80%;
         }
         .portfolio {
             visibility: hidden;
@@ -406,7 +283,11 @@ body {
         .redes {
             margin-top: 50%;
         }
-
+        #ele-toon{
+            visibility: visible;
+            top: 25%;
+        }
+        
 }
     
 
