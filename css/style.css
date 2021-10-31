@@ -60,10 +60,7 @@ body {
     position: fixed;
     width: 50%;
 
-    /* animation-name: desaparecer;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards; */
+    
 }
 
 @keyframes desaparecer {
@@ -225,12 +222,12 @@ body {
     .encabezado #renglon1{
         font-size: 40px;
         left: 10%;
-        margin-top:10%;
+        margin-top:15%;
         
     }
     .encabezado #renglon2 {
         font-size: 24px;
-        left: 10%;
+        left: 20%;
         
     }
     
@@ -249,7 +246,7 @@ body {
         margin-top: 50%;
     }
     #ele-toon{
-        visibility: visible;
+        visibility: hidden;
         top: 30%;
         right: 25%;
     }
@@ -284,7 +281,7 @@ body {
             margin-top: 50%;
         }
         #ele-toon{
-            visibility: visible;
+            visibility: hidden;
             top: 25%;
         }
         
