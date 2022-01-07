@@ -8,7 +8,7 @@
 
 /* FUENTES */
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   src: url(./font/lato/Lato/Lato-Light.ttf);
 }
 
@@ -26,7 +26,7 @@ canvas {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  background-image: url("");
+  background-image: url('');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -96,13 +96,14 @@ img {
 }
 
 .item h1 {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: bold;
   line-height: 4rem;
   font-size: 4rem;
   text-transform: capitalize;
   color: #13e8e9;
   text-align: center;
+  
 }
 .item h2 {
   font-size: 2rem;
@@ -115,7 +116,7 @@ img {
   height: 2rem;
   padding-top: 2%;
   background: transparent;
-  font-family: "Lato";
+  font-family: 'Lato';
   text-transform: uppercase;
   text-align: center;
   border-radius: 50px;
@@ -131,6 +132,6 @@ img {
 
 .redes li {
   display: inline-block;
-  padding: 15px;
+  padding: 0px;
   padding-top: 30%;
 }

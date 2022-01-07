@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   src: url(./font/lato/Lato/Lato-Regular.ttf);
 }
 
@@ -25,16 +25,21 @@ body {
 .container video {
   width: 100%;
   border-radius: 5%;
+  box-shadow: 10px 10px 5px black;
 }
 .container h2 {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-weight: bold;
   line-height: 4rem;
   font-size: 3rem;
   text-transform: capitalize;
   text-align: center;
+  text-shadow: 2px 2px 8px #0f4c59;
 }
 .container a {
   text-decoration: none;
   color: var(--color-3);
+}
+.item h2 {
+  text-shadow: 2px 2px 8px black;
 }
