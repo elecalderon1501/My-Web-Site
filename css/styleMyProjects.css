@@ -15,74 +15,123 @@ body {
   background: linear-gradient(90deg, #2b2840, #0f4c59 100%);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  margin: 0% 4%;
-}
-.container video {
-  width: 100%;
-  border-radius: 5%;
-  box-shadow: 10px 10px 5px black;
-}
-.item {
-  display: grid;
-  grid-template-columns: 50% 50%;
+@media (min-width: 1064px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 0% 4%;
+  }
+  .container video {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px black;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 50% 50%;
 
-  width: 90%;
-  height: 30vh;
-  padding: 7%;
-  margin-bottom: 5%;
-  background-color: transparent;
-  border: 2px solid #4ad9b0;
-  opacity: 0.9;
-  align-items: center;
-  align-content: center;
+    width: 90%;
+    height: 30vh;
+    padding: 7%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    border: 2px solid #4ad9b0;
+    opacity: 0.9;
+    align-items: center;
+    align-content: center;
+  }
+
+  .projectWeather {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoWeather {
+    width: auto;
+    padding: 20%;
+  }
+
+  .projectCountries {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videoCountries {
+    width: auto;
+    padding: 20%;
+  }
+
+  .projectCalculator {
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .videoCalculator {
+    width: auto;
+    padding: 20%;
+  }
+
+  .container h2 {
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 4rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 2px 8px #0f4c59;
+  }
+  .container a {
+    text-decoration: none;
+    color: var(--color-3);
+  }
+
+  .item h2 {
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+  }
+  .item video {
+    width: 400px;
+  }
+
+  .item p {
+    font-family: 'Lato';
+    font-size: 1em;
+    color: var(--color-3);
+  }
 }
 
-.projectWeather {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-}
+@media (max-width: 1063px) {
+  .item {
+    width: auto;
+    border: 2px solid var(--color-2);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+  }
 
-.videoWeather {
-  width: auto;
-  padding: 20%;
-}
-
-.projectCalculator {
-  width: auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.container h2 {
-  font-family: 'Lato';
-  font-weight: bold;
-  line-height: 4rem;
-  font-size: 3rem;
-  text-transform: capitalize;
-  text-align: center;
-  text-shadow: 2px 2px 8px #0f4c59;
-}
-.container a {
-  text-decoration: none;
-  color: var(--color-3);
-}
-
-.item h2 {
-  text-shadow: 2px 2px 8px black;
-  text-align: center;
-}
-.item video {
-  width: 400px;
-}
-
-.item p {
-  font-family: 'Lato';
-  font-size: 1em;
-  color: var(--color-3);
+  .item video {
+    width: 200px;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 5px;
+  }
+  .item h2 {
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+    font-family: 'Lato';
+  }
+  .item a {
+    text-decoration: none;
+    color: var(--color-4);
+  }
+  .item p {
+    font-family: 'Lato';
+    font-size: 1em;
+    color: var(--color-3);
+  }
 }
